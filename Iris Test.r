@@ -49,3 +49,5 @@ bwplot(iris.results)
 
 iris_prediction <- predict(fit.lda, iris_test)
 confusionMatrix(iris_prediction, iris_test$Species)
+write.csv(iris_prediction,file = "C:\\Users\\The Ledgend\\Desktop\\R\\iris-output.csv")
+
